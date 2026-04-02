@@ -3,12 +3,12 @@
 
 GENERAL INSTRUCTIONS
 
-Each of the task was using a button box, with yellow and blue buttons coded as 'Y' and 'B' keyboard letter input from the scanner.
+Each of the task was using a button box, with yellow and blue buttons coded as 'Y' and 'B' keyboard letters input from the scanner.
 
-The task can be used directly from the weblink bellow. A number of optimized design (timing, item randomization) are available and best fit a scan acquisition of TR=1.761s for launcher_ME and TR=1.1s for launcher (not ME)
-The following instruction help you navigate the task screens.
-After the setup of information and the practice, 'scanner set up' screen allow you to get the fMRI sequence ready, you can then press space to move to the screen waiting for the first scanner input coded at 't'.
-To test the task outside of the scanner envirnement, simply press 't' once to move to the task (which will start 10 seconds later) and use 'y' anb 'b' keybord to answer the task 
+The task can be used directly from the weblink bellow. A number of optimized designs (timing, item randomization) are available and fit a scan acquisition of TR=1.761s for launcher_ME and TR=1.1s for launcher (not ME)
+The following instructions help you navigate the task screens.
+After the setup of information and the practice, 'scanner set up' screen allows you to get the fMRI sequence ready, you can then press space to move to the next screen before launching the acquisition, the task will then be waiting for the first scanner input coded at 't'.
+To test the task outside of the scanner environment, simply press 't' once to move to the task (which will start 10 seconds later) and use 'y' anb 'b' keys to answer the task 
 
 After the task is done, a CSV file will be downloaded
 Task can be directly used (from online version or by using the github version and opening the root HTML launcher file) as-is or modified if your scanner acquisition time is different
@@ -16,7 +16,7 @@ Task can be directly used (from online version or by using the github version an
 In the design folder for each task, you will find a design python script that was use to create the timing optimization.
 Resulting timing are then transformed into JS file to be automatically read by the launcher
 
-For the action localizer task and the deck of cards task, due to the larger size of the required documents (videos and card images), please contact the author to gain access to the task scripts/files
+For the action localizer task and the deck of cards task, due to the larger size of the required documents (videos and card images), please contact the first author to gain access to the task scripts/files
 
 
 TASK:
