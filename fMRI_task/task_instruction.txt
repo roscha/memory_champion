@@ -20,28 +20,28 @@ For the action localizer task and the deck of cards task, due to the larger size
 
 
 TASK:
-for the reading span task (index on yellow, middle on blue)
+- for the reading span task (index on yellow, middle on blue)
 https://dosenbachlab.wustl.edu/services/readingspan/reading_span_fmri_launcher.html
 Instruction: launch / project-subject-session-run : input information and click submit / design: 0 / index : y / middle : b
 / space / space / S or V for practice / V (view practice) after what wait / scanner set up -> space
 / normalization -> t (wait 10s)
 
 
-For the deck of cards memory task (index on yellow, middle on blue)
+- For the deck of cards memory task (index on yellow, middle on blue)
 https://dosenbachlab.wustl.edu/services/mem_deck/memory_deck_fmri_BIDS_launcher.html
 Instruction: launch / project-subject-session-run : click submit / design: 0 / index : y / middle : b
 / space / scanner set up -> space / normalization -> t (wait 10s)
 
 
-For action Localizer task (index on yellow, middle on blue)
+- For action Localizer task (index on yellow, middle on blue)
 https://dosenbachlab.wustl.edu/services/actionlocalizer/actionlocalizer_launcher.html
 Instruction: launch / project-subject-session-run : click submit / design: 0 / index : y / middle : b
 / S or V for practice /space / after practice, wait / scanner set up -> space / normalization -> t
 (wait 10s)
 
 
-For the Pi retrieval task 
-Use the html launcher from the piretrieval folder
+- For the Pi retrieval task 
+https://dosenbachlab.wustl.edu/services/piretrieval/piretrieval_fmri_BIDS_launcher_ME.html
 Instruction: launch / project-subject-session-run : click submit / design: 0 / scanner set up -> space / normalization -> t
 (wait 10s)
 
