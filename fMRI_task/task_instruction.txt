@@ -1,0 +1,47 @@
+
+
+
+GENERAL INSTRUCTIONS
+
+Each of the task was using a button box, with yellow and blue buttons coded as 'Y' and 'B' keyboard letter input from the scanner.
+
+The task can be used directly from the weblink bellow. A number of optimized design (timing, item randomization) are available and best fit a scan acquisition of TR=1.761s for launcher_ME and TR=1.1s for launcher (not ME)
+The following instruction help you navigate the task screens.
+After the setup of information and the practice, 'scanner set up' screen allow you to get the fMRI sequence ready, you can then press space to move to the screen waiting for the first scanner input coded at 't'.
+To test the task outside of the scanner envirnement, simply press 't' once to move to the task (which will start 10 seconds later) and use 'y' anb 'b' keybord to answer the task 
+
+After the task is done, a CSV file will be downloaded
+Task can be directly used (from online version or by using the github version and opening the root HTML launcher file) as-is or modified if your scanner acquisition time is different
+
+In the design folder for each task, you will find a design python script that was use to create the timing optimization.
+Resulting timing are then transformed into JS file to be automatically read by the launcher
+
+For the action localizer task and the deck of cards task, due to the larger size of the required documents (videos and card images), please contact the author to gain access to the task scripts/files
+
+
+TASK:
+for the reading span task (index on yellow, middle on blue)
+https://dosenbachlab.wustl.edu/services/readingspan/reading_span_fmri_launcher.html
+Instruction: launch / project-subject-session-run : input information and click submit / design: 0 / index : y / middle : b
+/ space / space / S or V for practice / V (view practice) after what wait / scanner set up -> space
+/ normalization -> t (wait 10s)
+
+
+For the deck of cards memory task (index on yellow, middle on blue)
+https://dosenbachlab.wustl.edu/services/mem_deck/memory_deck_fmri_BIDS_launcher.html
+Instruction: launch / project-subject-session-run : click submit / design: 0 / index : y / middle : b
+/ space / scanner set up -> space / normalization -> t (wait 10s)
+
+
+For action Localizer task (index on yellow, middle on blue)
+https://dosenbachlab.wustl.edu/services/actionlocalizer/actionlocalizer_launcher.html
+Instruction: launch / project-subject-session-run : click submit / design: 0 / index : y / middle : b
+/ S or V for practice /space / after practice, wait / scanner set up -> space / normalization -> t
+(wait 10s)
+
+
+For the Pi retrieval task 
+Use the html launcher from the piretrieval folder
+Instruction: launch / project-subject-session-run : click submit / design: 0 / scanner set up -> space / normalization -> t
+(wait 10s)
+

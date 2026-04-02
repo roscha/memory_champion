@@ -1,0 +1,92 @@
+<!--<!DOCTYPE html><html class=''>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="robots" content="noindex">
+    <title>Working Memory Test</title>
+    
+<link rel='stylesheet' type='text/css' href='./plugins/jspsych.css'>
+<link rel='stylesheet' type='text/css' href='./plugins/default_style.css'>
+<link rel='stylesheet' type='text/css' href='./plugins/style.css'>
+</head>
+
+<body>
+	<script src='./The Experiment Factory_ Preview_files/jquery.min.js'></script>
+	<script src='./plugins/math.min.js'></script>
+	<script src='./plugins/poldrack_fmri_utils.js'></script>
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/jspsych.js"></script>
+    <script src="./plugins/jspsych-text.js"></script>
+    <script src="./plugins/jspsych-single-stim.js"></script>
+    
+	<script src="./designs/design.js"></script>
+	<script src="./designs/lists.js"></script>
+    <script src="./plugins/experiment.js"></script>
+    
+-->
+
+<!DOCTYPE html><html class=''>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="robots" content="noindex">
+    <title>The Experiment Factory: Preview</title>
+    
+<link rel='stylesheet' type='text/css' href='./The Experiment Factory_ Preview_files/jspsych.css'>
+<link rel='stylesheet' type='text/css' href='./The Experiment Factory_ Preview_files/default_style.css'>
+<link rel='stylesheet' type='text/css' href='./The Experiment Factory_ Preview_files/style.css'>
+</head>
+
+<body>
+<script src='./The Experiment Factory_ Preview_files/jquery.min.js'></script>
+
+<script src='./The Experiment Factory_ Preview_files/math.min.js'></script>
+<script src='./The Experiment Factory_ Preview_files/jspsych.js'></script>
+<script src='./The Experiment Factory_ Preview_files/jspsych-call-function.js'></script>
+<script src='./The Experiment Factory_ Preview_files/jspsych-text.js'></script>
+<script src='./The Experiment Factory_ Preview_files/jspsych-poldrack-text.js'></script>
+<script src='./The Experiment Factory_ Preview_files/jspsych-poldrack-instructions.js'></script>
+<script src='./The Experiment Factory_ Preview_files/jspsych-attention-check.js'></script>
+<script src='./The Experiment Factory_ Preview_files/jspsych-poldrack-single-stim.js'></script>
+<script src='./The Experiment Factory_ Preview_files/jspsych-poldrack-categorize.js'></script>
+<script src='./The Experiment Factory_ Preview_files/jspsych-survey-text.js'></script>
+<script src='./The Experiment Factory_ Preview_files/poldrack_utils.js'></script>
+<script src='./The Experiment Factory_ Preview_files/poldrack_fmri_utils.js'></script>
+<script src='./designs/design.js'></script>
+<script src="./designs/lists.js"></script>
+<script src='./The Experiment Factory_ Preview_files/experiment.js'></script>
+
+<script>
+$( document ).ready(function() {
+
+    expfactory_finished = false;
+
+    jsPsych.init({
+timeline: readingspan_experiment,
+display_element: "getDisplayElement",
+fullscreen: true,
+on_trial_finish: function(data){
+addID('readingspan__fmri')
+},
+on_finish: function(data){
+jsPsych.data.localSave(jsPsych.data.getDataByTrialIndex(3).filename+'.csv', 'csv');
+expfactory_finished = true;
+}
+});
+
+});
+</script>
+</body>
+</html>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76442333-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+

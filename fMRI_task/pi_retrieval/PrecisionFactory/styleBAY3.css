@@ -1,0 +1,413 @@
+
+/* make background black for fmri*/ 
+.display_stage_background {
+  height: 768px;
+  width: 1024px;
+  background-color: black;
+  z-index: -1;
+}
+
+/* make background black for fmri*/ 
+.display_stage {
+  position: fixed;
+  left: 51px;
+  top: 15px;
+  height: 722px;
+  width: 922px;
+  background-color: black;
+  box-shadow: 1px 1px 1px black; /* fixes white line */ 
+}
+
+
+
+/*for memorydeck*/
+
+img.card {
+  height: 25%;
+  width: 25%;
+}
+
+img.card1 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:20%;
+  transform:translate(-50%,-50%);
+}
+
+img.card2 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:40%;
+  transform:translate(-50%,-50%);
+  
+}
+
+img.card3 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:60%;
+  transform:translate(-50%,-50%);
+  
+}
+img.card4 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:80%;
+  transform:translate(-50%,-50%);
+  
+}
+
+img.l1 {
+  left:20%;  
+}
+img.l2 {
+  left:40%;  
+}
+img.l3 {
+  left:60%;  
+}
+img.l4 {
+  left:80%;  
+}
+
+img.cardpos1{
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:50%;
+  left:20%;
+  transform:translate(-50%,-50%);
+  
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  
+}
+
+img.cardpos2{
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  
+}
+
+img.cardpos3{
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:50%;
+  left:80%;
+  transform:translate(-50%,-50%);
+  
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  
+}
+
+
+img.testup1 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:20%;
+  left:20%;
+  transform:translate(-50%,-50%);
+  
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px; 
+}
+img.testup2 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:20%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+img.testup3 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:20%;
+  left:80%;
+  transform:translate(-50%,-50%);
+  
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;  
+}
+
+img.testarrow {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+    
+}
+
+img.testdown1 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:80%;
+  left:20%;
+  transform:translate(-50%,-50%);
+  
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;  
+}
+img.testdown2 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:80%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px; 
+}
+img.testdown3 {
+  height: 25%;
+  width: 25%;
+  position:absolute;
+  top:80%;
+  left:80%;
+  transform:translate(-50%,-50%);
+  
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;  
+}
+
+
+/*back to standard css*/
+
+
+
+.ss_text {
+	text-align: center;
+	font-size: 30px;
+}
+
+.ss_stim {
+	text-align: center;
+	font-size: 12px;
+}
+
+.stop-signal{
+	text-align: center;
+	font-size: 80px;
+	color: black;
+}
+
+.centered-shape {
+	position:absolute;
+	top:50%;
+    left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.shapebox {
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+}
+
+
+.stim {
+    width: 512px;
+    height: 461px; /*\\height: 50%;\\auto;width: 50%;\\auto\9; /* ie8 */
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;  
+}
+
+.fixation {
+  text-align: center;
+  font-size: 75px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  color: white;
+ }
+
+.prompt_stim {
+  height: 67px;
+  margin: auto;
+  display: block;
+  padding-bottom:5px;
+}
+
+.prompt_container {
+  height: 105px;
+  width: 135px;
+  font-size: 12px;
+}
+
+.stopbox {
+  width: 20%;
+  height: 205px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+}
+
+/* covers fixation cross when stim is displayed */
+.coverbox {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+  background: black;
+  z-index: 1;
+}
+
+
+.feedbackbox {
+  width: 512px;
+  height: 461px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+  z-index: 3;
+}
+
+
+#stop-signal {
+    background: red;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    z-index: -2;
+}
+
+#stop-signal:before, #stop-signal:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+
+#stop-signal:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#stop-signal:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+#stop-signal-inner {
+    background: black;
+    width: 95%;
+    height: 95%;
+    text-align: center;
+    z-index: -1;
+}
+#stop-signal-inner:before, #stop-signal-inner:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+#stop-signal-inner:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#stop-signal-inner:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+
+.instructbox {
+  width: 512px;
+  height: 461px;
+  position:absolute;
+  top:45%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.instruct-text {
+  width:100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  font-size: 15px;
+  line-height: 120%;
+  color: white;
+}
+
+.center-text {
+  color: white; 
+  font-size: 25px;
+
+}
+
+.center-block-text {
+  color: white
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  color: white
+}

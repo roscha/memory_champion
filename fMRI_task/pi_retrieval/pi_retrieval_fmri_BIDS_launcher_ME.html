@@ -1,0 +1,69 @@
+<!DOCTYPE html><html class=''>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="robots" content="noindex">
+    <title>Precision Factory</title>
+    
+<link rel='stylesheet' type='text/css' href='./PrecisionFactory/jspsych.css'>
+<link rel='stylesheet' type='text/css' href='./PrecisionFactory/default_style.css'>
+<link rel='stylesheet' type='text/css' href='./PrecisionFactory/style.css'>
+</head>
+
+<body>
+<script src='./PrecisionFactory/jquery.min.js'></script>
+
+<script src='./PrecisionFactory/math.min.js'></script>
+<script src='./PrecisionFactory/jspsych.js'></script>
+<script src='./PrecisionFactory/jspsych-call-function.js'></script>
+<script src='./PrecisionFactory/jspsych-text.js'></script>
+<script src='./PrecisionFactory/jspsych-poldrack-text.js'></script>
+<script src='./PrecisionFactory/jspsych-poldrack-instructions.js'></script>
+<script src='./PrecisionFactory/jspsych-attention-check.js'></script>
+<script src='./PrecisionFactory/jspsych-poldrack-single-stim.js'></script>
+<script src='./PrecisionFactory/jspsych-poldrack-categorize.js'></script>
+<script src='./PrecisionFactory/jspsych-survey-text.js'></script>
+<script src='./PrecisionFactory/poldrack_utils.js'></script>
+<script src='./PrecisionFactory/poldrack_fmri_utils.js'></script>
+<script src='./designs/design_ME.js'></script>
+<script src='./designs/lists.js'></script>
+<script src='./PrecisionFactory/experiment_BIDS_launcher.js'></script>
+<!-- <script src='./PrecisionFactory/jspsych-stop-signal.js'></script> -->
+
+
+
+<script>
+$( document ).ready(function() {
+
+    expfactory_finished = false;
+
+    jsPsych.init({
+timeline: piretrieval__fmri_experiment,
+display_element: "getDisplayElement",
+fullscreen: true,
+on_trial_finish: function(data){
+addID('piretrieval__fmri')
+},
+on_finish: function(data){
+//fetch("https://dosenbachlab.wustl.edu/services/json", { method: "POST", headers: { "Content-type": "application/json" }, body: JSON.stringify({ filename: "public/piretrieval/results/"+jsPsych.data.getDataByTrialIndex(3).filename+".json", data: jsPsych.data.dataAsJSON() })}).then( data => data.json() ).then( data => console.log(data) );
+jsPsych.data.localSave(jsPsych.data.getDataByTrialIndex(3).filename+'.csv', 'csv');
+expfactory_finished = true;
+}
+});
+
+});
+</script>
+</body>
+</html>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76442333-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
